@@ -60,7 +60,7 @@ class RelatedRequest(BaseModel):
 # http://127.0.0.1:8000/ 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 
 # http://127.0.0.1:8000/analyze
