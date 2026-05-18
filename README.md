@@ -93,8 +93,8 @@ paper-rag-agent/
  
 ```bash
 # 1. 가상환경 생성 및 활성화
-python -m venv venv
-.\venv\Scripts\Activate    # Windows
+python -m venv .venv
+.\.venv\Scripts\Activate    # Windows
 source venv/bin/activate   # macOS/Linux
  
 # 2. 의존성 설치
